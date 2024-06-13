@@ -21,6 +21,10 @@ function odczytajDane() {
     else {
         opoznienie = Opoznienie.value;
     }
+    koncowa = koncowa.toUpperCase();
+    posrednia = posrednia.toUpperCase();
+    numer = numer.toUpperCase();
+    opoznienie = opoznienie.toUpperCase();
 }
 
 function aktualizujTablice() {

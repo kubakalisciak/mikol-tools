@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
 * {
-    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pojemnik {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tablica {
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 15px solid #c5bf97;
+    background-color: #161414;
+    color: aliceblue;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Roboto Mono';
+
+    display: flex;
+    flex-direction: column;
+}
+
+.gora, .numer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dol {
+    display: flex;
+    justify-content: space-around;  
+}
+.gora p, .dol p, .numer p {
+    /* border: 1px solid #f0f8ff3d; */
+    margin: 2px;
+    padding: 2px;
+}
+
+.przez-stacje {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
