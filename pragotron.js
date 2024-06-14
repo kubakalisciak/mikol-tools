@@ -1,45 +1,35 @@
-// deklaracja zmiennych globalnych
 let koncowa;
+let typ;
 let posrednia;
 let godzina;
-let numer;
-let opoznienie;
+let inne;
 
-function odczytajDane() {
-    const Koncowa = document.querySelector('#koncowaI');
-    koncowa = Koncowa.value;
-    const Posrednia = document.querySelector('#posredniaI');
-    posrednia = Posrednia.value;
-    const Godzina = document.querySelector('#godzinaI');
-    godzina = Godzina.value;
-    const Numer = document.querySelector('#numerI');
-    numer = Numer.value;
-    const Opoznienie = document.querySelector('#opoznienieI');
-    if (Opoznienie.value == "") {
-        opoznienie = "Na czas";
+function odczytaj() {
+    let koncowaI = document.querySelector('#stacja-koncowa');
+    koncowa = koncowaI.value;
+    let typI = document.querySelector('#typ-pociagu');
+    let Typ = typI.value;
+    if (Typ === "Inne") {
+        typ = prompt("Nie podano typu pociągu; jaki chcesz zastosować?");
     }
     else {
-        opoznienie = Opoznienie.value;
+        typ = typI.value;
     }
-    koncowa = koncowa.toUpperCase();
-    posrednia = posrednia.toUpperCase();
-    numer = numer.toUpperCase();
-    opoznienie = opoznienie.toUpperCase();
+    let posredniaI = document.querySelector('#stacja-posrednia');
+    posrednia = posredniaI.value;
+    let godzinaI = document.querySelector('#godzina');
+    godzina = godzinaI.value;
+    let inneI = document.querySelector('#inne');
+    inne = inneI.value;
 }
 
-function aktualizujTablice() {
-    odczytajDane();
-    const Koncowa = document.querySelector('#koncowaT');
-    Koncowa.textContent = koncowa;
-    const Posrednia = document.querySelector('#posredniaT');
-    Posrednia.textContent = posrednia;
-    const Godzina = document.querySelector('#godzinaT');
-    Godzina.textContent = godzina;
-    const Numer = document.querySelector('#numerT');
-    Numer.textContent = numer;
-    const Opoznienie = document.querySelector('#opoznienieT');
-    Opoznienie.textContent = opoznienie;
+function aktualizuj() {
+    odczytaj();
+    let koncowaO = document.querySelector('#koncowaO');
+    koncowaO.textContent = koncowa.toUpperCase();
+    let typO = document.querySelector('#typO');
+    typO.textContent = typ.toUpperCase();
 }
 
-const aktualizujP = document.querySelector('#aktualizujP');
-aktualizujP.onclick = () => aktualizujTablice();
+let aktualizujP = document.querySelector('#aktualizujP')
+aktualizujP.onclick = () => aktualizuj();

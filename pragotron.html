@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Pragotron - mikol-tools</title>
-    <script src="pragotron.js" defer></script>
     <link rel="stylesheet" href="pragotron.css">
+    <script src="pragotron.js" defer></script>
 </head>
 <body>
-    <div class="pojemnik">
-        <div class="dane">
-            <input type="text" id="koncowaI" placeholder="stacja końcowa">
-            <input type="text" id="posredniaI" placeholder="stacja pośrednia">
-            <input type="time" id="godzinaI" placeholder="czas odjazdu">
-            <input type="text" id="numerI" placeholder="numer pociągu">
-            <input type="text" id="opoznienieI" placeholder="opóźnienie pociągu">
-            <button id="aktualizujP">Aktualizuj</button>
+    <div>
+        <div>
+            <input type="text" id="stacja-koncowa" placeholder="stacja końcowa">
+            <label for="typ">Typ pociągu</label>
+            <select name="typ" id="typ-pociagu">
+                <option value="eip">EIP</option>
+                <option value="eic">EIC</option>
+                <option value="ic">IC</option>
+                <option value="tlk">TLK</option>
+                <option value="regio">REGIO</option>
+                <option value="inne">Inne</option>
+            </select>
+            <input type="text" id="stacja-posrednia" placeholder="stacja pośrednia">
+            <input type="time" id="godzina">
+            <input type="text" id="inne" placeholder="inne">
+            <button id="aktualizujP">Aktualizuj dane!</button>
         </div>
-        <div class="tablica">
-            <div class="gora">
-                <p id="koncowaT"></p>
-                <div class="przez-stacje"><p style="font-size: 20px;">PRZEZ </p><p id="posredniaT"></p></div>
-            </div>
-            <div class="dol">
-                <div class="numer">
-                    <p id="numerT"></p>
-                    <p id="godzinaT"></p>
-                </div>
-                <p id="opoznienieT"></p>
-            </div>
+        <div>
+            <p id="koncowaO"></p>
+            <p id="typO"></p>
+            <p id="posredniaO"></p>
+            <p id="godzinaO"></p>
+            <p id="inneO"></p>
         </div>
     </div>
 </body>
