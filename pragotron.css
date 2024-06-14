@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.naglowek {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pojemnik {
+    width: 1100px;
+    border: 1px solid red;
+}
