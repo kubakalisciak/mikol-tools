@@ -1,5 +1,6 @@
 let koncowa;
 let typ;
+let nazwa;
 let posrednia;
 let godzina;
 let inne;
@@ -17,6 +18,8 @@ function odczytaj() {
     else {
         typ = Typ;
     }
+    let nazwaI = document.querySelector('#nazwa');
+    nazwa = nazwaI.value;
     let posredniaI = document.querySelector('#stacja-posrednia');
     posrednia = posredniaI.value;
     let godzinaI = document.querySelector('#godzina');
@@ -59,6 +62,8 @@ function aktualizuj() {
     let typO = document.querySelector('#typO');
     typO.textContent = typ.toUpperCase();
     kolorujTyp(typO);
+    let nazwaO = document.querySelector('#nazwaO');
+    nazwaO.textContent = nazwa.toUpperCase();
     let posredniaO = document.querySelector('#posredniaO');
     posredniaO.textContent = posrednia.toUpperCase();
     let godzinaO = document.querySelector('#godzinaO');

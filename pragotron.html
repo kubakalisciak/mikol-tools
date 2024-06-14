@@ -23,6 +23,7 @@
                 <option value="tlk">TLK</option>
                 <option value="regio">REGIO</option>
             </select>
+            <input type="text" id="nazwa" placeholder="nazwa pociągu">
             <input type="text" id="stacja-posrednia" placeholder="stacja pośrednia">
             <input type="time" id="godzina">
             <input type="text" id="inne" placeholder="inne">
@@ -30,14 +31,26 @@
             <input type="text" id="tor" placeholder="tor">
             <button id="aktualizujP">Aktualizuj dane!</button>
         </div>
-        <div>
-            <p id="koncowaO"></p>
-            <p id="typO"></p>
-            <p id="posredniaO"></p>
-            <p id="godzinaO"></p>
-            <p id="inneO"></p>
-            <p id="torO"></p>
-            <p id="peronO"></p>
+        <div class="tablica">
+            <div class="bok">
+                <span id="peronO"></span>
+                <p>TOR <span id="torO"></span></p>
+            </div>
+            <div class="dane">
+                <div>
+                    <span id="koncowaO"></span>
+                </div>
+                <div class="informacje">
+                    <div class="dane">
+                        <p><span id="typO"></span> <span id="nazwaO"></span></p>
+                        <p>ODJAZD O <span id="godzinaO"></span></p>
+                    </div>
+                    <div class="dane">
+                        <p>PRZEZ <span id="posredniaO"></span></p>
+                        <span id="inneO"></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
