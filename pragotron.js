@@ -76,5 +76,25 @@ function aktualizuj() {
     torO.textContent = tor.toUpperCase();
 }
 
+function wyczysc() {
+    let koncowaI = document.querySelector('#stacja-koncowa');
+    koncowaI.value = '';
+    let nazwaI = document.querySelector('#nazwa');
+    nazwaI.value = '';
+    let posredniaI = document.querySelector('#stacja-posrednia');
+    posredniaI.value = '';
+    let godzinaI = document.querySelector('#godzina');
+    godzinaI.value = '';
+    let inneI = document.querySelector('#inne');
+    inneI.value = '';
+    let peronI = document.querySelector('#peron');
+    peronI.value = '';
+    let torI = document.querySelector('#tor');
+    torI.value = '';
+}
+
 let aktualizujP = document.querySelector('#aktualizujP')
 aktualizujP.onclick = () => aktualizuj();
+
+let wyczyscP = document.querySelector('#wyczyscP')
+wyczyscP.onclick = () => wyczysc();

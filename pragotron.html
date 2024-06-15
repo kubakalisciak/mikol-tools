@@ -7,29 +7,46 @@
     <script src="pragotron.js" defer></script>
 </head>
 <body>
-    <div class="naglowek">
-        <p>mikol-tools: pragotron</p>
-        <p>lista linków</p>
-    </div>
     <div class="pojemnik">
-        <div>
-            <input type="text" id="stacja-koncowa" placeholder="stacja końcowa">
-            <label for="typ">Typ pociągu</label>
-            <select name="typ" id="typ-pociagu">
-                <option value="inne">Inne</option>
-                <option value="eip">EIP</option>
-                <option value="eic">EIC</option>
-                <option value="ic">IC</option>
-                <option value="tlk">TLK</option>
-                <option value="regio">REGIO</option>
-            </select>
-            <input type="text" id="nazwa" placeholder="nazwa pociągu">
-            <input type="text" id="stacja-posrednia" placeholder="stacja pośrednia">
-            <input type="time" id="godzina">
-            <input type="text" id="inne" placeholder="inne">
-            <input type="text" id="peron" placeholder="peron">
-            <input type="text" id="tor" placeholder="tor">
-            <button id="aktualizujP">Aktualizuj dane!</button>
+        <div class="naglowek">
+            <p>mikol-tools: pragotron</p>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="https://github.com/kubakalisciak/mikol-tools/issues">Zgłoś problem</a></li>
+                <li><a href="https://github.com/kubakalisciak">Mój profil</a></li>
+            </ul>
+        </div>
+        <div class="wejscie">
+            <div class="inputy">   
+                <div>
+                    <input type="text" id="peron" placeholder="peron">
+                    <input type="text" id="tor" placeholder="tor">
+                </div>
+                <div>
+                    <input type="text" id="stacja-koncowa" placeholder="stacja końcowa">
+                    <input type="text" id="stacja-posrednia" placeholder="stacja pośrednia">
+                </div>
+                <div>
+                    <label for="typ">Typ pociągu</label>
+                    <select name="typ" id="typ-pociagu">
+                        <option value="inne">Inne</option>
+                        <option value="eip">EIP</option>
+                        <option value="eic">EIC</option>
+                        <option value="ic">IC</option>
+                        <option value="tlk">TLK</option>
+                        <option value="regio">REGIO</option>
+                    </select>
+                    <input type="text" id="nazwa" placeholder="nazwa pociągu">
+                </div>
+                <div>
+                    <input type="time" id="godzina">
+                    <input type="text" id="inne" placeholder="inne">
+                </div>
+            </div>
+            <div>
+                <button id="aktualizujP">Aktualizuj</button>
+                <button id="wyczyscP">Wyczyść</button>
+            </div>
         </div>
         <div class="tablica">
             <div class="bok">
