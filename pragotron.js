@@ -93,8 +93,8 @@ function wyczysc() {
     torI.value = '';
 }
 
-let aktualizujP = document.querySelector('#aktualizujP')
+let aktualizujP = document.querySelector('#aktualizujP');
 aktualizujP.onclick = () => aktualizuj();
 
-let wyczyscP = document.querySelector('#wyczyscP')
+let wyczyscP = document.querySelector('#wyczyscP');
 wyczyscP.onclick = () => wyczysc();

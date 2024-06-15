@@ -25,13 +25,12 @@ p {
 
 .pojemnik {
     width: 1100px;
-    border: 1px solid red;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
 }
 
-.tablica {
+#tablica {
     display: flex;
     flex-direction: row;
     border: 10px solid gray;
@@ -90,6 +89,7 @@ p span {
 .inputy {
     display: flex;
     justify-content: flex-start;
+    padding: 10px;
 }
 
 li {
@@ -101,4 +101,13 @@ a {
     font-weight: 500;
     text-decoration: none;
     color: #080808;
+}
+
+button {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    font-family: 'JetBrains Mono';
+    margin: 3px;
 }
